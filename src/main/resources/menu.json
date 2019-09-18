@@ -1,0 +1,22 @@
+{
+  "version": "2.0",
+  "menu": [
+    {
+      "order": 1,
+      "title": "首页",
+      "icon": "account_box",
+      "url": "/dashboard",
+      "name": "dashboard",
+      "templateUrl": "project/html/demo/tree.html",
+      "requiredPermissions": [
+        {
+          "role": "ADMIN",
+          "logical": "OR",
+          "permissions": [
+            "MOBILE_CONFIG:DASHBOARD"
+          ]
+        }
+      ]
+    }
+  ]
+}
