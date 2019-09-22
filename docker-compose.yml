@@ -5,7 +5,7 @@ services:
     image: registry.fit2cloud.com/innovation/support2.0:master
     container_name: support
     ports:
-      - 80:8088
+      - 8088:8088
     volumes:
       - host-opt-fit2cloud-conf:/opt/fit2cloud/conf
       - host-opt-fit2cloud-logs:/opt/fit2cloud/logs
