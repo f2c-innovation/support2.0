@@ -2,6 +2,7 @@
   "version": "2.0",
   "menu": [
     {
+      "id": "dashboard",
       "order": 1,
       "title": "首页",
       "icon": "account_box",
@@ -13,7 +14,80 @@
           "role": "ADMIN",
           "logical": "OR",
           "permissions": [
-            "MOBILE_CONFIG:DASHBOARD"
+            "ADMIN:DASHBOARD"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "settings",
+      "order": 6,
+      "title": "系统管理",
+      "icon": "build",
+      "children": [
+        {
+          "order": 1,
+          "title": "系统设置",
+          "name": "system_param_list",
+          "url": "/system_param_list",
+          "templateUrl": "project/html/system/system_param_list.html",
+          "requiredPermissions": [
+            {
+              "role": "ADMIN",
+              "logical": "OR",
+              "permissions": [
+                "ADMIN:SYSTEM"
+              ]
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "title": "字典管理",
+          "name": "category",
+          "url": "/category",
+          "templateUrl": "project/html/system/category.html",
+          "requiredPermissions": [
+            {
+              "role": "ADMIN",
+              "logical": "OR",
+              "permissions": [
+                "ADMIN:SYSTEM"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "price-setting",
+          "order": 3,
+          "title": "服务商设置",
+          "name": "provider_setting",
+          "url": "/provider_setting",
+          "templateUrl": "project/html/system/provider_setting.html",
+          "requiredPermissions": [
+            {
+              "role": "ADMIN",
+              "logical": "OR",
+              "permissions": [
+                "ADMIN:SYSTEM"
+              ]
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "title": "服务等级",
+          "name": "grade_service",
+          "url": "/grade_service",
+          "templateUrl": "web-public/fit2cloud/html/system/grade_service.html",
+          "requiredPermissions": [
+            {
+              "role": "ADMIN",
+              "logical": "OR",
+              "permissions": [
+                "ADMIN:SYSTEM"
+              ]
+            }
           ]
         }
       ]
