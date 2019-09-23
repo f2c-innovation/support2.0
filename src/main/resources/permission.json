@@ -2,9 +2,17 @@
   "version": "2.0",
   "permissions": [
     {
-      "id": "MOBILE_CONFIG:DASHBOARD",
+      "id": "ADMIN:DASHBOARD",
       "name": "仪盘表",
-      "resourceId": "MOBILE_CONFIG",
+      "resourceId": "ADMIN:DASHBOARD",
+      "parentRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "id": "ADMIN:SYSTEM",
+      "name": "系统管理",
+      "resourceId": "ADMIN:SYSTEM",
       "parentRoles": [
         "ADMIN"
       ]
@@ -12,8 +20,12 @@
   ],
   "resources": [
     {
-      "id": "MOBILE_CONFIG",
-      "name": "MOBILE CONFIG"
+      "id": "ADMIN:SYSTEM",
+      "name": "ADMIN:SYSTEM"
+    },
+    {
+      "id": "ADMIN:SYSTEM",
+      "name": "ADMIN:SYSTEM"
     }
   ]
 }
