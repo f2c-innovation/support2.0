@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.quartz.QuartzAutoConfiguration;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-@SpringBootApplication(exclude = QuartzAutoConfiguration.class)
+@SpringBootApplication(exclude = {QuartzAutoConfiguration.class})
 @EnableDiscoveryClient
 public class Application {
 
