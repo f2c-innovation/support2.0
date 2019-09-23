@@ -219,7 +219,7 @@
 	<logger name="com.fit2cloud.config.dao" level="${log.level.sql}">
 		<appender-ref ref="${log.out}"/>
 	</logger>
-	<logger name="com.fit2cloud.config.Application" level="${logger.level:INFO}">
+	<logger name="com.fit2cloud.Application" level="${logger.level:INFO}">
 		<appender-ref ref="infoAsyncAppender"/>
 	</logger>
 	<logger name="com.fit2cloud.commons.server.base.mapper" level="${log.level.sql}">
