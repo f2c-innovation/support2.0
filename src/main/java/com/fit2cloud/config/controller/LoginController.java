@@ -87,10 +87,10 @@ public class LoginController {
     }
 
     public String loginPath(HttpServletResponse response, Model model) {
-        if (GlobalConfigurations.isReleaseMode()) {
-            response.setHeader("Location", "/logout");
-            response.setStatus(302);
-        }
+//        if (GlobalConfigurations.isReleaseMode()) {
+//            response.setHeader("Location", "/logout");
+//            response.setStatus(302);
+//        }
         model.addAttribute("timestamp", WebConstants.timestamp);
         return "web-public/login";
     }
