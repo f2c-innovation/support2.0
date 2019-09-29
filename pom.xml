@@ -28,7 +28,7 @@
     <dependencies>
         <dependency>
             <groupId>com.fit2cloud</groupId>
-            <artifactId>common-web</artifactId>
+            <artifactId>common-web-support</artifactId>
             <version>${fit2cloud-version}</version>
         </dependency>
         <dependency>

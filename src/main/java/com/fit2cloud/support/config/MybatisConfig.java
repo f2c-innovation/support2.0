@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * 2）创建SqlSessionFactory
  */
 @Configuration    //该注解类似于spring配置文件
-@MapperScan(basePackages = {"com.fit2cloud.dao"}, sqlSessionFactoryRef = "sqlSessionFactory")
+@MapperScan(basePackages = {"com.fit2cloud.support.dao"}, sqlSessionFactoryRef = "sqlSessionFactory")
 @EnableTransactionManagement
 public class MybatisConfig {
 

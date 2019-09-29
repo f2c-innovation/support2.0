@@ -20,6 +20,92 @@
       ]
     },
     {
+      "id": "user",
+      "order": 2,
+      "title": "用户与租户",
+      "icon": "account_box",
+      "children": [
+        {
+          "order": 1,
+          "title": "用户",
+          "name": "user",
+          "url": "/user",
+          "templateUrl": "project/html/user/user-list.html",
+          "requiredPermissions": [
+            {
+              "role": "ADMIN",
+              "logical": "OR",
+              "permissions": [
+                "USER:READ"
+              ]
+            },
+            {
+              "role": "ORGADMIN",
+              "logical": "OR",
+              "permissions": [
+                "USER:READ"
+              ]
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "title": "角色",
+          "name": "role",
+          "url": "/role",
+          "templateUrl": "project/html/role/role-list.html",
+          "requiredPermissions": [
+            {
+              "role": "ADMIN",
+              "logical": "OR",
+              "permissions": [
+                "ROLE:READ"
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "title": "组织",
+          "name": "organization",
+          "url": "/organization",
+          "templateUrl": "project/html/organization/organization-list.html",
+          "requiredPermissions": [
+            {
+              "role": "ADMIN",
+              "logical": "OR",
+              "permissions": [
+                "ORGANIZATION:READ"
+              ]
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "title": "工作空间",
+          "name": "workspace",
+          "url": "/workspace",
+          "templateUrl": "project/html/workspace/workspace-list.html",
+          "requiredPermissions": [
+            {
+              "role": "ADMIN",
+              "logical": "OR",
+              "permissions": [
+                "WORKSPACE:READ"
+              ]
+            },
+            {
+              "role": "ORGADMIN",
+              "logical": "OR",
+              "permissions": [
+                "WORKSPACE:READ"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "settings",
       "order": 6,
       "title": "系统管理",
