@@ -22,7 +22,7 @@ services:
       timeout: 3s
       retries: 10
     env_file:
-      - ./conf/mysql.env
+      - /opt/fit2cloud/conf/mysql.env
     ports:
       - 3306:3306
     volumes:

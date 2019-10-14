@@ -33,7 +33,7 @@
         </dependency>
         <dependency>
             <groupId>com.fit2cloud</groupId>
-            <artifactId>server-public</artifactId>
+            <artifactId>server-public-support</artifactId>
             <version>${fit2cloud-version}</version>
         </dependency>
         <dependency>
